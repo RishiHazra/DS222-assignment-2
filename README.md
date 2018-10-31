@@ -23,6 +23,6 @@ pc-04$ python example.py --job_name="worker" --task_index=2
 ```
 
 ### References
-[distibuted tensorflow example] https://github.com/ischlag/distributed-tensorflow-example  
-[distributed tensorlofw documentation]  https://www.tensorflow.org/deploy/distributed
+[distibuted tensorflow example] (https://github.com/ischlag/distributed-tensorflow-example)  
+[distributed tensorlofw documentation]  (https://www.tensorflow.org/deploy/distributed)
 
