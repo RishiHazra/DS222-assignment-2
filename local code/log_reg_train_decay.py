@@ -74,13 +74,13 @@ with tf.Session() as sess:
     n_batches= int(tfidf_train.shape[0]/batch_size)
     
     # train the model n_epochs times
-    for i in range(n_epochs):
+    for j in range(n_epochs):
         total_loss=0
-        for j in range(n_batches):
+        for i in range(n_batches):
             x,y=tfidf_train[i*batch_size:(i+1)*batch_size,:],label_train[i*batch_size:(i+1)*batch_size,:]
             _, l=sess.run([optimizer,loss],feed_dict={X:x, Y:y})
             total_loss+=l
-        print('Average loss epoch {0}: {1}'.format(i, total_loss/n_batches))
+        print('Average loss epoch {0}: {1}'.format(j, total_loss/n_batches))
         print (learning_rate.eval())        
     print('Total time: {0} seconds'.format(time.time()-start))
     
